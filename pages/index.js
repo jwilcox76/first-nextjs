@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
+import Counter from "../components/counter";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -18,11 +19,13 @@ export default function Home() {
         Joshua Wilcox welcomes <a href="https://nextjs.org">Next.js!</a>
       </h1>
 
+      <Counter/>
+{/* 
       <div>
         <h2>Counter: {count}</h2>
         <button onClick={increment} >Increase</button>
         <button onClick={decrement} >Decrease</button>
-      </div>
+      </div> */}
     </div>
   );
 }
