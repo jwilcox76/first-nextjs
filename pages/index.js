@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
-import Counter from "../components/counter";
+import Counter from "../components/Counter";
 import SearchBar from '../components/SearchBar';
 import Paragraph from '../components/Paragraph';
 

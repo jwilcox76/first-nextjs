@@ -16,3 +16,4 @@ export default function Counter({incrementBy = 1, bgColor = "white"}) {
       </div>
     );
   }
+
