@@ -2,6 +2,9 @@ import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Counter from "../components/counter";
+import SearchBar from '../components/SearchBar';
+import Paragraph from '../components/Paragraph';
+
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -18,14 +21,12 @@ export default function Home() {
       <h1 className={styles.title}>
         Joshua Wilcox welcomes <a href="https://nextjs.org">Next.js!</a>
       </h1>
+      <Counter bgColor='purple'/>
+      <Counter incrementBy={2} bgColor='yellow'/>
 
-      <Counter/>
-{/* 
-      <div>
-        <h2>Counter: {count}</h2>
-        <button onClick={increment} >Increase</button>
-        <button onClick={decrement} >Decrease</button>
-      </div> */}
+      <Paragraph/>
+
+      <SearchBar/>
     </div>
   );
 }
